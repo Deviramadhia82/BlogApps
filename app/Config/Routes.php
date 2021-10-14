@@ -42,6 +42,8 @@ $routes->get('/', function (){
 });
 
 $routes->get('/admin','Templating::index');
+$routes->get('/admin/posts','AdminPostController::index');
+$routes->get('/admin/posts/create','AdminPostController::create');
 // $routes->get('/posts', 'PostController::index');
 $routes->get('/register', 'Templating::register');
 $routes->post('/saveRegister', 'Templating::saveRegister');
