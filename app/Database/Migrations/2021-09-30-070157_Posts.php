@@ -29,11 +29,11 @@ class Posts extends Migration
                 ],
                 'author' => [
                     'type' => 'VARCHAR',
-                    'constraint' => 100,
+                    'constraint' => 100
                 ],
                 'kategori' => [
                     'type' => 'VARCHAR',
-                    'constraint' => 100,
+                    'constraint' => 100
                 ],
                 'slug' => [
                     'type' => 'VARCHAR',
@@ -48,7 +48,6 @@ class Posts extends Migration
                     'type' => 'DATETIME',
                     'null' => true
                 ],
-                 
             ]);
             $this->forge->addKey('post_id', true);
             $this->forge->createTable('posts');
